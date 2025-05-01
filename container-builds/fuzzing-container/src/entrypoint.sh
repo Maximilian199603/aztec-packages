@@ -138,7 +138,7 @@ fuzz() {
 
     files=("$TMPOUT"/crash-*)
     if [ ${#files[@]} -eq 0 ] || [ ! -e "${files[0]}" ]; then
-        echo "No crashes occured";
+        echo "No crashes occurred";
     else 
         echo "Start minimization"
         for crash in "${files[@]}"; do
